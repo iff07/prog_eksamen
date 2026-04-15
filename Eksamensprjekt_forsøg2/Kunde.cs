@@ -48,7 +48,9 @@ namespace Eksamensprjekt_forsøg2
                 // og sender værdien sikkert til databasen
                 cmd.Parameters.AddWithValue("@Fornavn", fornavn);
                 cmd.Parameters.AddWithValue("@Efternavn", efternavn);
-                cmd.Parameters.AddWithValue("@alder", alder);
+                cmd.Parameters.AddWithValue("@Alder", alder);
+                cmd.Parameters.AddWithValue("@Brugernavn", brugernavn);
+                cmd.Parameters.AddWithValue("@Kodeord", kodeord);
 
                 // ExecuteReader sender SELECT-forespørgslen til databasen
                 // og returnerer et result set (som DataReader læser)
